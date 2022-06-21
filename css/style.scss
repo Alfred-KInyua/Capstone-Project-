@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: 0px auto;
+    font-family: Inter, sans-serif;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/art-canvas.jpg);//mobile bg home section
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.hamburger {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+
+}
+.details{
+    h2{
+        font-size: 2em;
+    }
+    h4{
+        margin: 0px;
+        color: white;
+    }
+    h5{
+        color: white;  
+    }
+}
+
+
+h1 {
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    padding: 0 20px;
+
+
+}
+
+h2 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 0 20px;
+
+
+
+    background-image: url(../images/fire1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1px -110px;
+    -webkit-background-clip: text;
+    color: transparent;
+
+
+}
+
+.paragraph-one {
+
+    border: 2px solid white;
+    font-size: 1rem;
+    background-color: aliceblue;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+    color: black;
+}
+
+.paragraph-two {
+    padding: 20px;
+
+}
+
+h3 {
+    padding: 0 20px;
+    text-align: center;
+    
+}
+
+
+.card {
+    background-image: url(../images/card-background.jpg);
+    margin: 20px 0;
+}
+
+.card-one {
+    margin-left: 20px;
+}
+
+
+.card-item-child {
+    display: flex;
+    align-items: center;
+    background-color: rgba(136, 128, 128, 0.5);
+    margin: 10px;
+
+}
+
+.heading-three-cards {
+    text-align: center;
+    color: white;
+
+}
+
+.fad {
+    color: white;
+    padding: 0 20px;
+
+}
+
+.lecture {
+    color: red;
+
+}
+
+.card-paragraph {
+    padding: 0 20px;
+    color: white;
+
+}
+
+.buttons {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn {
+
+    background-color: red;
+    padding: 20px;
+    color: white;
+}
+
+.featured-h3 {
+    color: black;
+    text-align: center;
+}
+
+.port {
+    max-width: 100%;
+
+}
+
+.card-item-child-featured {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.red-paragraph {
+    color: red;
+    margin: 10px 0;
+}
+
+.more {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.more>* {
+    margin-left: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgba(6, 2, 20, 0.945);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    img {
+        width: 40px;
+        height: 40px
+    }
+
+    margin-top: 10px;
+
+}
+
+footer>* {
+    margin-left: 10px;
+}
+
+.desktop {
+    display: none;
+}
+//..............................................................................
+//                 ABout.html CSS page
+//..............................................................................
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        width: 50%;
+    }
+}
+ 
+.about-paragraph{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+   text-align: center;
+    width: 50%;
+}
+.about {
+    background-image: url(../images/fire1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.doll-image{
+    margin-right: 10px;
+    position: relative;
+}
+    
+ .doll-image:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(255, 0, 0, .5);
+    
+ 
+}
+.doll-image{
+    h4{
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+//..............................................................................
+//                  MEDIA QUERY
+//..............................................................................
+
+
+@media (min-width:769px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .black-background-icon {
+        background-color: black;
+        width: 50%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .gray-background-icon {
+        background-color: gray;
+        width: 50%;
+        padding: 0px;
+        margin: 0px;
+
+
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+
+
+    }
+
+    .menu-items {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        transition: transform 250ms ease-out;
+
+        li {
+            margin-right: 30px;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+                padding: 5px;
+            }
+        }
+    }
+
+    .menu-items>*:hover {
+        transform: scale(2.1);
+        transform-origin: center;
+
+        a {
+            color: black;
+            border: 1px solid red;
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 60%;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+
+    .icons {
+        display: flex;
+
+    }
+
+    .icon-items {
+
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        color: white;
+
+        li {
+            margin-right: 20px;
+        }
+    }
+
+    .top-section {
+        background-image: url('../images/art-canvas.jpg'); //desktop  background
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .details {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10%;
+
+        h1 {
+            margin-top: 1em;
+            font-size: 3em;
+        }
+
+        h2 {
+            width: 60%;
+            margin: 5px 0;
+            font-size: 4em;
+        }
+
+        .paragraph-one {
+            width: 60%;
+
+        }
+
+
+
+    }
+
+    
+    .card-grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(6, auto);
+        gap: 20px
+    }
+
+    .card-item-child {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .whole-program {
+        padding: 5%;
+        text-align: center;
+
+        a {
+            color: white;
+
+        }
+    }
+
+    .grid-card {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 20px;
+
+
+    }
+
+    .portfolio {
+        margin-right: 2em;
+    }
+
+    .about {
+        background-image: url('../images/about-art.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+}
+
+//..............................................................................
+//                  ABout page Media query
+//..............................................................................
+@media (min-width:679px) {   
+.about-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+       
+    } 
+
+    .detail {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            margin-top: 1em;
+            font-size: 3em;
+            color: black;
+            text-align: center;
+        }
+
+        h2 {
+            width: 60%;
+            margin: 10px 0;
+            font-size: 5em;
+            text-align: center;
+            color: white;
+            
+            
+        }
+
+        .paragraph-one {
+            width: 60%;
+
+        }
+    }
+    
+    .red-images{
+    display: flex;
+    justify-content: center ;  
+    
+   
+}
+
+}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
 img {
   max-width: 100%;
 }
@@ -24,28 +25,22 @@ img {
   align-items: flex-start;
   width: 25px;
   height: 3px;
-  margin: 5px ;
+  margin: 5px;
   background-color: #1a1b1b;
   transition: all 0.3s ease-in-out;
 }
 
 .hamburger {
- display: block;
- 
- 
+  display: block;
 }
+
 .hamburger.active {
   display: block;
   position: absolute;
-  top:0;
-  right:0;
-  
- }
-
-
-.hamburger.active {
-  display: block;
+  top: 0;
+  right: 0;
 }
+
 .hamburger.active .stripes:nth-child(1) {
   transform: translateY(8px) rotate(60deg);
   background-color: #1a1b1b;
@@ -59,26 +54,29 @@ img {
   transform: translateY(-8px) rotate(-60deg);
   background-color: #1a1b1b;
 }
+
 .menu.active {
   display: block;
   text-align: left;
-  
 }
-.menu-items.active{
+
+.menu-items.active {
   display: flex;
   flex-direction: column;
   list-style: none;
   margin: 5px;
-  a{
+
+  a {
     text-decoration: none;
     color: red;
-    
   }
-  .menu-item{
+
+  .menu-item {
     margin: 20px 0;
   }
- }
- .content{
+}
+
+.content {
   margin-left: 10%;
 }
 
@@ -98,18 +96,17 @@ h2 {
   padding: 0 20px;
   background-image: url('../images/fire1.jpg');
   background-size: cover;
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .details {
   background-color: rgba(255, 253, 253, 0.808);
+
   h2 {
     font-size: 2em;
     background-image: url('../images/fire1.jpg');
     background-size: cover;
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }
@@ -131,7 +128,7 @@ h2 {
   font-size: 1rem;
   background-color: rgba(156, 141, 141, 0.082);
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color:rgba(22, 16, 16, 0.76);
+  color: rgba(22, 16, 16, 0.76);
 }
 
 .paragraph-two {
@@ -148,6 +145,10 @@ h3 {
   margin: 20px 0;
 }
 
+.card-items {
+  margin: 0 20px;
+}
+
 .card-one {
   margin-left: 20px;
 }
@@ -158,7 +159,6 @@ h3 {
   background-color: rgba(136, 128, 128, 0.5);
   margin: 10px;
 }
-
 
 .heading-three-cards {
   text-align: center;
@@ -189,7 +189,7 @@ h3 {
 }
 
 .btn {
-  color: rgba(231, 19, 19, 0.76);
+  background-color: rgba(231, 19, 19, 0.76);
   padding: 20px;
   color: white;
 }
@@ -225,27 +225,21 @@ h3 {
 footer {
   padding: 20px;
   background-color: rgba(6, 2, 20, 0.945);
- 
   color: white;
   margin-top: 10px;
 }
 
-.footer-content{
+.footer-content {
+  .logos {
+    display: flex;
+    justify-content: space-around;
 
-  .logos{
-      display: flex;
-      justify-content: space-around;
-      
-    li{
+    li {
       list-style: none;
-     font-size: 4em;
-      color: #f1f1f1;  
-  
+      font-size: 4em;
+      color: #f1f1f1;
     }
-
   }
- 
-  
 }
 
 .more > * {
@@ -262,7 +256,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .about-paragraph {
@@ -271,9 +264,9 @@ footer {
   align-self: center;
   text-align: justify;
   padding: 20px;
-
 }
-.detail{
+
+.detail {
   background-color: rgba(255, 253, 253, 0.808);
 }
 
@@ -281,26 +274,12 @@ footer {
   background-image: url(../images/about-art.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .doll-image {
   margin: 10px 10px;
   position: relative;
-}
 
-.doll-image::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(255, 0, 0, 0.5);
-}
-
-.doll-image {
   h4 {
     color: white;
     font-weight: bold;
@@ -316,21 +295,33 @@ footer {
   }
 }
 
+.doll-image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 0, 0, 0.5);
+}
 
- .log.active{
+.log.active {
   background-color: red;
- }
-  nav.active {
-     display: flex;
-     align-items: initial;
-     margin: 24px auto;
-     height: 100%;
-   }
-   .pic{
-    font-size: 39px;
-    margin-top: 15px;
-    color: white;
-  }
+}
+
+nav.active {
+  display: flex;
+  align-items: initial;
+  margin: 24px auto;
+  height: 100%;
+}
+
+.pic {
+  font-size: 39px;
+  margin-top: 15px;
+  color: white;
+}
 
 //..............................................................................
 //                  MEDIA QUERY
@@ -349,12 +340,9 @@ footer {
     display: none;
   }
 
-
   .about-paragraph {
     width: 50%;
   }
-
-
 
   .black-background-icon {
     background-color: black;
@@ -397,7 +385,7 @@ footer {
     list-style: none;
     justify-content: flex-end;
     transition: transform 250ms ease-out;
-    font-size: 20pt;
+    font-size: 15pt;
 
     li {
       margin-right: 30px;
@@ -406,22 +394,24 @@ footer {
       a {
         text-decoration: none;
         padding: 5px;
+        color: #1a1b1b;
+      }
+
+      a .five {
+        border: 1px solid red;
       }
     }
   }
-
 
   .menu-items > *:hover {
     transform: scale(2.1);
     transform-origin: center;
 
     a {
-      color:red;
+      color: red;
       border: 1px solid red;
     }
   }
-
-
 
   .icons {
     display: flex;
@@ -453,8 +443,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     background-color: rgba(255, 253, 253, 0.808);
-    
-    
 
     h1 {
       margin-top: 1em;
@@ -472,7 +460,8 @@ footer {
       text-align: center;
     }
   }
-.card-grid {
+
+  .card-grid {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(6, auto);
@@ -481,41 +470,45 @@ footer {
   }
 
   .card-item-child {
-    margin: 0 .1px;
+    margin: 0 0.1px;
     display: flex;
     flex-direction: column;
   }
-  .card-item-child:hover{
-   border: 1px solid white;
 
+  .card-item-child:hover {
+    border: 1px solid white;
   }
-  .mains{
+
+  .mains {
     transform: translate(1%, 127%);
   }
-  hr{
-  
-     border: 0; border-top: 3px solid red;
-     width: 5%;
-     transform: translate(10%, 450%);
 
- 
+  hr {
+    border: 0;
+    border-top: 3px solid red;
+    width: 5%;
+    transform: translate(10%, 450%);
   }
-  #Partnership{
-    border: 0; border-top: 3px solid red;
+
+  #Partnership {
+    border: 0;
+    border-top: 3px solid red;
     width: 5%;
     transform: translate(10%, -350%);
-
   }
-  .car-paragraph{
+
+  .car-paragraph {
     color: gray;
     font-size: 0.9em;
   }
-#center{
-  border: 0; border-top: 3px solid red;
-  width: 5%;
-  transform: translate(10%, -500%);
 
-}
+  #center {
+    border: 0;
+    border-top: 3px solid red;
+    width: 5%;
+    transform: translate(10%, -500%);
+  }
+
   .grid-card {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -533,7 +526,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-
   }
 }
 
@@ -553,10 +545,11 @@ footer {
       width: 50%;
     }
   }
-  #about-hr-line{
-    border: 0; border-top: 3px solid red;    
-     transform: translate(10%, 450%);
 
+  #about-hr-line {
+    border: 0;
+    border-top: 3px solid red;
+    transform: translate(10%, 450%);
   }
 
   .detail {
@@ -568,10 +561,8 @@ footer {
     background-color: rgba(255, 253, 253, 0.808);
 
     h1 {
-     
       margin-top: 1em;
       font-size: 3em;
-      
       text-align: center;
       color: rgba(226, 48, 17, 0.8);
     }
@@ -583,7 +574,6 @@ footer {
       text-align: center;
       background-image: url('../images/fire1.jpg');
       background-size: cover;
-      background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
     }
@@ -597,10 +587,15 @@ footer {
     display: flex;
     justify-content: center;
   }
-}
 
-@media (max-width: 769px) {
+  .about-footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
-
+    .A-logo {
+      font-size: 10em;
+      margin-right: 10px;
+    }
+  }
 }

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
-
 img {
   max-width: 100%;
 }
@@ -16,18 +15,77 @@ img {
   background-image: url(../images/art-canvas.jpg);//mobile bg home section
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(255, 253, 253, 0.808);
+}
+
+.stripes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 25px;
+  height: 3px;
+  margin: 5px ;
+  background-color: #1a1b1b;
+  transition: all 0.3s ease-in-out;
 }
 
 .hamburger {
+ display: block;
+ 
+ 
+}
+.hamburger.active {
+  display: block;
+  position: absolute;
+  top:0;
+  right:0;
+  
+ }
+
+
+.hamburger.active {
+  display: block;
+}
+.hamburger.active .stripes:nth-child(1) {
+  transform: translateY(8px) rotate(60deg);
+  background-color: #1a1b1b;
+}
+
+.hamburger.active .stripes:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .stripes:nth-child(3) {
+  transform: translateY(-8px) rotate(-60deg);
+  background-color: #1a1b1b;
+}
+.menu.active {
+  display: block;
+  text-align: left;
+  
+}
+.menu-items.active{
   display: flex;
-  justify-content: flex-start;
-  padding: 10px;
+  flex-direction: column;
+  list-style: none;
+  margin: 5px;
+  a{
+    text-decoration: none;
+    color: red;
+    
+  }
+  .menu-item{
+    margin: 20px 0;
+  }
+ }
+ .content{
+  margin-left: 10%;
 }
 
 h1 {
   font-weight: 100;
   font-size: 1.5rem;
-  color: white;
+  color: rgba(231, 19, 19, 0.76);
   margin: 1em 0;
   padding: 0 20px;
 }
@@ -38,12 +96,22 @@ h2 {
   font-size: 2.5rem;
   text-align: left;
   padding: 0 20px;
-  color: rgba(199, 26, 26, 0.76);
+  background-image: url('../images/fire1.jpg');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .details {
+  background-color: rgba(255, 253, 253, 0.808);
   h2 {
     font-size: 2em;
+    background-image: url('../images/fire1.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   h4 {
@@ -61,10 +129,9 @@ h2 {
 .paragraph-one {
   border: 2px solid white;
   font-size: 1rem;
-  background-color: pink;
-  padding: 20px;
+  background-color: rgba(156, 141, 141, 0.082);
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: black;
+  color:rgba(22, 16, 16, 0.76);
 }
 
 .paragraph-two {
@@ -92,6 +159,7 @@ h3 {
   margin: 10px;
 }
 
+
 .heading-three-cards {
   text-align: center;
   color: white;
@@ -107,7 +175,7 @@ h3 {
 }
 
 .child-art {
-  color: red;
+  color: rgba(192, 5, 5, 0.856);
 }
 
 .card-paragraph {
@@ -121,7 +189,7 @@ h3 {
 }
 
 .btn {
-  background-color: red;
+  color: rgba(231, 19, 19, 0.76);
   padding: 20px;
   color: white;
 }
@@ -157,21 +225,27 @@ h3 {
 footer {
   padding: 20px;
   background-color: rgba(6, 2, 20, 0.945);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
   color: white;
-
-  img {
-    width: 40px;
-    height: 40px;
-  }
-
   margin-top: 10px;
 }
 
-footer > * {
-  margin-left: 10px;
+.footer-content{
+
+  .logos{
+      display: flex;
+      justify-content: space-around;
+      
+    li{
+      list-style: none;
+     font-size: 4em;
+      color: #f1f1f1;  
+  
+    }
+
+  }
+ 
+  
 }
 
 .more > * {
@@ -188,7 +262,7 @@ footer > * {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: pink;
+  
 }
 
 .about-paragraph {
@@ -197,14 +271,17 @@ footer > * {
   align-self: center;
   text-align: justify;
   padding: 20px;
-  background-color: pink;
+
+}
+.detail{
+  background-color: rgba(255, 253, 253, 0.808);
 }
 
 .about {
   background-image: url(../images/about-art.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: pink;
+  
 }
 
 .doll-image {
@@ -239,11 +316,27 @@ footer > * {
   }
 }
 
+
+ .log.active{
+  background-color: red;
+ }
+  nav.active {
+     display: flex;
+     align-items: initial;
+     margin: 24px auto;
+     height: 100%;
+   }
+   .pic{
+    font-size: 39px;
+    margin-top: 15px;
+    color: white;
+  }
+
 //..............................................................................
 //                  MEDIA QUERY
 //..............................................................................
 
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
   .mobile {
     display: none;
   }
@@ -256,9 +349,12 @@ footer > * {
     display: none;
   }
 
+
   .about-paragraph {
     width: 50%;
   }
+
+
 
   .black-background-icon {
     background-color: black;
@@ -301,6 +397,7 @@ footer > * {
     list-style: none;
     justify-content: flex-end;
     transition: transform 250ms ease-out;
+    font-size: 20pt;
 
     li {
       margin-right: 30px;
@@ -313,15 +410,18 @@ footer > * {
     }
   }
 
+
   .menu-items > *:hover {
     transform: scale(2.1);
     transform-origin: center;
 
     a {
-      color: black;
+      color:red;
       border: 1px solid red;
     }
   }
+
+
 
   .icons {
     display: flex;
@@ -340,6 +440,7 @@ footer > * {
 
   .top-section {
     background-image: url('../images/art-canvas.jpg'); //desktop  background
+    background-color: rgba(255, 253, 253, 0.808);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -351,7 +452,9 @@ footer > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10%;
+    background-color: rgba(255, 253, 253, 0.808);
+    
+    
 
     h1 {
       margin-top: 1em;
@@ -369,20 +472,50 @@ footer > * {
       text-align: center;
     }
   }
-
-  .card-grid {
+.card-grid {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(6, auto);
-    gap: 5px;
+    gap: 2px;
+    margin-top: 70px;
   }
 
   .card-item-child {
-    margin: 0.1px;
+    margin: 0 .1px;
     display: flex;
     flex-direction: column;
   }
+  .card-item-child:hover{
+   border: 1px solid white;
 
+  }
+  .mains{
+    transform: translate(1%, 127%);
+  }
+  hr{
+  
+     border: 0; border-top: 3px solid red;
+     width: 5%;
+     transform: translate(10%, 450%);
+
+ 
+  }
+  #Partnership{
+    border: 0; border-top: 3px solid red;
+    width: 5%;
+    transform: translate(10%, -350%);
+
+  }
+  .car-paragraph{
+    color: gray;
+    font-size: 0.9em;
+  }
+#center{
+  border: 0; border-top: 3px solid red;
+  width: 5%;
+  transform: translate(10%, -500%);
+
+}
   .grid-card {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -400,6 +533,7 @@ footer > * {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+
   }
 }
 
@@ -419,6 +553,11 @@ footer > * {
       width: 50%;
     }
   }
+  #about-hr-line{
+    border: 0; border-top: 3px solid red;    
+     transform: translate(10%, 450%);
+
+  }
 
   .detail {
     height: 100vh;
@@ -426,13 +565,15 @@ footer > * {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 253, 253, 0.808);
 
     h1 {
-      background-color: pink;
+     
       margin-top: 1em;
       font-size: 3em;
-      color: black;
+      
       text-align: center;
+      color: rgba(226, 48, 17, 0.8);
     }
 
     h2 {
@@ -440,7 +581,11 @@ footer > * {
       margin: 10px 0;
       font-size: 5em;
       text-align: center;
-      color: white;
+      background-image: url('../images/fire1.jpg');
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
 
     .paragraph-one {
@@ -452,4 +597,10 @@ footer > * {
     display: flex;
     justify-content: center;
   }
+}
+
+@media (max-width: 769px) {
+
+
+
 }

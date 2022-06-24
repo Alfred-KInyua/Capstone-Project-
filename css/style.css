@@ -383,7 +383,7 @@ nav.active {
 }
 
 .footer-about-content h3 {
-  color: white;
+  color: #d3d3d3;
 }
 
 .footer-about-content .logos {
@@ -598,7 +598,7 @@ nav.active {
   .footer-content .logos li {
     list-style: none;
     font-size: 4em;
-    color: #f1f1f1;
+    color: #d3d3d3;
   }
   .top-section {
     background-image: url("../images/art-canvas.jpg");

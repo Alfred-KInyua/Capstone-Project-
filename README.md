@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# life-coaching
+# Abstarct ARt 
 This is a Capstone project created basing on this [Design template](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) by Cindy , its aim is to get feedback about the achievement of technical and soft skills gained during module 1 of the program.
 
 # Live demo

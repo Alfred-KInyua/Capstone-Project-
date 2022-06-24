@@ -59,13 +59,6 @@ const featured = [{
   title: 'Abstarct art director and current CEO.',
   Name: 'McMaccanon Keinan',
   description: 'determine which artistic elements to use; articulate the vision to their team; review and approve copy, and timelines.',
-},
-
-{
-  image: './images/face5.jpg',
-  title: 'Abstarct art director and current CEO.',
-  Name: 'McMaccanon Keinan',
-  description: 'determine which artistic elements to use; articulate the vision to their team; review and approve copy, and timelines.',
 }];
 let myString = '';
 const detailsArray = [];
@@ -83,7 +76,7 @@ for (let i = 0; i < featured.length; i += 1) {
 }
 
 window.onload = () => {
-  document.querySelector('.featured-section').innerHTML = detailsArray.join(' ');
+  document.querySelector('.featured-section').innerHTML = detailsArray.join('');
   if (window.screen.width <= 768) {
     document.querySelector('.featured-section').innerHTML = detailsArray.slice(0, 2);
 

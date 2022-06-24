@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
 img {
   max-width: 100%;
 }
 
 .container {
   margin: 0 auto;
-  font-family: Inter, sans-serif;
+  font-family: 'COCOGOOSE', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -100,20 +100,19 @@ img {
 }
 
 h1 {
-  font-weight: 100;
   font-size: 1.5rem;
-  color: rgba(231, 19, 19, 0.76);
+  color: #ec5242;
   margin: 1em 0;
   padding: 0 20px;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 300;
   margin: 0.5em 0;
   font-size: 2.5rem;
   text-align: left;
   padding: 0 20px;
-  color: rgba(226, 48, 17, 0.8);
+  color: #ec5242;
 }
 
 .details {
@@ -122,25 +121,26 @@ h2 {
 
 .details h2 {
   font-size: 3em;
-  color: rgba(226, 48, 17, 0.8);
+  color: #ec5242;
 }
 
 .details h4 {
   margin: 0;
-  color: rgba(231, 19, 19, 0.76);
+  color: #ec5342f5;
   font-size: 1.5em;
 }
 
 .details h5 {
-  color: rgba(199, 26, 26, 0.911);
+  color: #ec5242;
   font-size: 1em;
 }
 
 .paragraph-one {
   border: 2px solid white;
-  font-size: 1rem;
+  padding: 5px;
+  font-size: 0.8rem;
   background-color: rgba(156, 141, 141, 0.082);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'COCOGOOSE', sans-serif;
   color: rgba(22, 16, 16, 0.76);
 }
 
@@ -149,7 +149,7 @@ h2 {
 }
 
 h3 {
-  padding: 0 20px;
+  font-family: 'COCOGOOSE', sans-serif;
   text-align: center;
 }
 
@@ -164,6 +164,10 @@ h3 {
 
 .card-one {
   margin-left: 20px;
+}
+
+.card-one h3 {
+  text-align: left;
 }
 
 .card-item-child {
@@ -192,11 +196,13 @@ h3 {
 }
 
 .child-art {
-  color: rgba(192, 5, 5, 0.856);
+  color: #ec5242;
+  font-style: normal;
 }
 
 .card-paragraph {
-  padding: 0 5px;
+  text-align: center;
+  padding: 0 15px;
   color: white;
 }
 
@@ -210,13 +216,13 @@ h3 {
 }
 
 .btn {
-  background-color: rgba(231, 19, 19, 0.76);
+  background-color: #ec5242;
   padding: 20px;
   color: white;
 }
 
 .featured-h3 {
-  color: black;
+  color: rgba(0, 0, 0, 0.719);
   text-align: center;
 }
 
@@ -238,7 +244,7 @@ h3 {
 }
 
 .red-paragraph {
-  color: red;
+  color: #ec5242;
   margin: 10px 0;
 }
 
@@ -260,8 +266,25 @@ h3 {
   margin-left: 10px;
 }
 
-.desktop, .bottom-footer {
+.desktop,
+.bottom-footer {
   display: none;
+}
+
+.portfolio::before {
+  content: "";
+  margin-right: 3%;
+  display: block;
+  position: absolute;
+  background-size: cover;
+  width: 20%;
+  height: 20%;
+  opacity: 0.9;
+  background-image: url(../images/dotted.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+  -webkit-transform: translate(-12%, -20%);
+          transform: translate(-12%, -20%);
 }
 
 .about-section {
@@ -289,6 +312,7 @@ h3 {
       align-self: center;
   text-align: justify;
   padding: 20px;
+  color: gray;
 }
 
 .detail {
@@ -307,6 +331,7 @@ h3 {
 }
 
 .doll-image h4 {
+  font-family: 'COCOGOOSE', sans-serif;
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -329,11 +354,11 @@ h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(255, 0, 0, 0.5);
+  background: #ec5342b2;
 }
 
 .log.active {
-  background-color: red;
+  background-color: #ec5242;
 }
 
 nav.active {
@@ -354,7 +379,7 @@ nav.active {
 }
 
 .footer-about-content {
-  background-color: #272A31;
+  background-color: #272a31;
 }
 
 .footer-about-content h3 {
@@ -378,9 +403,8 @@ nav.active {
 }
 
 .back {
-  display: block;
   background-color: rgba(185, 179, 179, 0.342);
-  color: black;
+  color: rgba(0, 0, 0, 0.822);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +421,7 @@ nav.active {
 }
 
 .back h5 {
-  margin-right: 30px;
+  margin: 0 15px;
 }
 
 .back .st {
@@ -471,15 +495,15 @@ nav.active {
   .card-items {
     margin: 0 10em;
   }
-  footer, .top-footer {
+  footer,
+  .top-footer {
     padding: 20px;
-    background-color: #272A31;
+    background-color: #272a31;
     color: white;
     margin-top: 10px;
   }
   .back {
-    display: block;
-    background-color: #272A31;
+    background-color: #272a31;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -510,7 +534,6 @@ nav.active {
     padding: 0;
   }
   .bottom-footer {
-    display: block;
     background-color: #989ca359;
     color: black;
     display: -webkit-box;
@@ -540,6 +563,31 @@ nav.active {
     margin: 0 10px;
     padding: 0;
   }
+  .menu-items > *:hover {
+    -webkit-transform: scale(2.1);
+            transform: scale(2.1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .menu-items > *:hover a {
+    color: #ec5242;
+    border: 1px solid red;
+  }
+  .icon-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    list-style: none;
+    background-color: #272a31;
+    color: white;
+    padding: 20px 0;
+  }
+  .icon-items li {
+    margin-right: 20px;
+  }
   .footer-content .logos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -551,31 +599,6 @@ nav.active {
     list-style: none;
     font-size: 4em;
     color: #f1f1f1;
-  }
-  .menu-items > *:hover {
-    -webkit-transform: scale(2.1);
-            transform: scale(2.1);
-    -webkit-transform-origin: center;
-            transform-origin: center;
-  }
-  .menu-items > *:hover a {
-    color: red;
-    border: 1px solid red;
-  }
-  .icon-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    list-style: none;
-    background-color: #272A31;
-    color: white;
-    padding: 20px 0;
-  }
-  .icon-items li {
-    margin-right: 20px;
   }
   .top-section {
     background-image: url("../images/art-canvas.jpg");
@@ -632,6 +655,9 @@ nav.active {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .card-item-child:hover {
     border: 1px solid white;
@@ -674,7 +700,22 @@ nav.active {
     margin: 0 10%;
   }
   .portfolio {
-    margin-right: 2em;
+    margin-right: 3%;
+  }
+  .portfolio::before {
+    content: "";
+    margin-right: 3%;
+    display: block;
+    position: absolute;
+    background-size: cover;
+    width: 5%;
+    height: 7%;
+    opacity: 0.9;
+    background-image: url(../images/dotted.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    -webkit-transform: translate(-12%, -20%);
+            transform: translate(-12%, -20%);
   }
   .about {
     background-image: url("../images/about-art.jpg");
@@ -702,6 +743,7 @@ nav.active {
             justify-content: center;
   }
   .about-section p {
+    color: gray;
     width: 50%;
   }
   #about-hr-line {
@@ -731,14 +773,14 @@ nav.active {
     margin-top: 1em;
     font-size: 3em;
     text-align: center;
-    color: rgba(226, 48, 17, 0.8);
+    color: #ec5242;
   }
   .detail h2 {
     width: 60%;
     margin: 10px 0;
     font-size: 5em;
     text-align: center;
-    color: rgba(226, 48, 17, 0.8);
+    color: #ec5242;
   }
   .detail .paragraph-one {
     width: 60%;
@@ -764,7 +806,7 @@ nav.active {
   }
   .about-footer-content .A-logo {
     font-size: 2em;
-    margin-right: 10px;
+    margin-left: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -26,7 +26,7 @@ document.querySelectorAll('.menu-items').forEach((link) => {
 
 const featured = [{
   image: './images/face2.jpg',
-  title: 'Professional photographer and graphic designer',
+  title: 'photographer and graphic designer',
   Name: 'Lucy Letty',
   description: 'combine technical proficiency with artistry to create images of people, animals, events and objects.',
 },

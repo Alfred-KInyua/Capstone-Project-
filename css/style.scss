@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
 
 img {
   max-width: 100%;
@@ -6,7 +6,7 @@ img {
 
 .container {
   margin: 0 auto;
-  font-family: Inter, sans-serif;
+  font-family: 'COCOGOOSE', sans-serif;
   box-sizing: border-box;
 }
 
@@ -81,20 +81,19 @@ img {
 }
 
 h1 {
-  font-weight: 100;
   font-size: 1.5rem;
-  color: rgba(231, 19, 19, 0.76);
+  color: #ec5242;
   margin: 1em 0;
   padding: 0 20px;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 300;
   margin: 0.5em 0;
   font-size: 2.5rem;
   text-align: left;
   padding: 0 20px;
-  color: rgba(226, 48, 17, 0.8);
+  color: #ec5242;
 }
 
 .details {
@@ -102,26 +101,27 @@ h2 {
 
   h2 {
     font-size: 3em;
-    color: rgba(226, 48, 17, 0.8);
+    color: #ec5242;
   }
 
   h4 {
     margin: 0;
-    color: rgba(231, 19, 19, 0.76);
+    color: #ec5342f5;
     font-size: 1.5em;
   }
 
   h5 {
-    color: rgba(199, 26, 26, 0.911);
+    color: #ec5242;
     font-size: 1em;
   }
 }
 
 .paragraph-one {
   border: 2px solid white;
-  font-size: 1rem;
+  padding: 5px;
+  font-size: 0.8rem;
   background-color: rgba(156, 141, 141, 0.082);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'COCOGOOSE', sans-serif;
   color: rgba(22, 16, 16, 0.76);
 }
 
@@ -130,7 +130,7 @@ h2 {
 }
 
 h3 {
-  padding: 0 20px;
+  font-family: 'COCOGOOSE', sans-serif;
   text-align: center;
 }
 
@@ -145,6 +145,10 @@ h3 {
 
 .card-one {
   margin-left: 20px;
+
+  h3 {
+    text-align: left;
+  }
 }
 
 .card-item-child {
@@ -169,11 +173,13 @@ h3 {
 }
 
 .child-art {
-  color: rgba(192, 5, 5, 0.856);
+  color: #ec5242;
+  font-style: normal;
 }
 
 .card-paragraph {
-  padding: 0 5px;
+  text-align: center;
+  padding: 0 15px;
   color: white;
 }
 
@@ -183,13 +189,13 @@ h3 {
 }
 
 .btn {
-  background-color: rgba(231, 19, 19, 0.76);
+  background-color: #ec5242;
   padding: 20px;
   color: white;
 }
 
 .featured-h3 {
-  color: black;
+  color: rgba(0, 0, 0, 0.719);
   text-align: center;
 }
 
@@ -200,12 +206,12 @@ h3 {
 .card-item-child-featured {
   display: flex;
   justify-content: flex-start;
-  align-items:center;
+  align-items: center;
   margin: 10px;
 }
 
 .red-paragraph {
-  color: red;
+  color: #ec5242;
   margin: 10px 0;
 }
 
@@ -221,8 +227,24 @@ h3 {
   margin-left: 10px;
 }
 
-.desktop,.bottom-footer{
+.desktop,
+.bottom-footer {
   display: none;
+}
+
+.portfolio::before {
+  content: "";
+  margin-right: 3%;
+  display: block;
+  position: absolute;
+  background-size: cover;
+  width: 20%;
+  height: 20%;
+  opacity: 0.9;
+  background-image: url(../images/dotted.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: translate(-12%, -20%);
 }
 //..............................................................................
 //                 ABout.html CSS page
@@ -239,6 +261,7 @@ h3 {
   align-self: center;
   text-align: justify;
   padding: 20px;
+  color: gray;
 }
 
 .detail {
@@ -256,6 +279,7 @@ h3 {
   position: relative;
 
   h4 {
+    font-family: 'COCOGOOSE', sans-serif;
     color: white;
     font-weight: bold;
     border: 3px solid #f1f1f1;
@@ -278,11 +302,11 @@ h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(255, 0, 0, 0.5);
+  background: #ec5342b2;
 }
 
 .log.active {
-  background-color: red;
+  background-color: #ec5242;
 }
 
 nav.active {
@@ -294,19 +318,21 @@ nav.active {
 
 .pic {
   font-size: 39px;
-  margin:15px 15px;
+  margin: 15px 15px;
   color: white;
 }
+
 .footer-about-content {
-  background-color: #272A31;
-  h3{
+  background-color: #272a31;
+
+  h3 {
     color: white;
   }
+
   .logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  
 
     li {
       list-style: none;
@@ -316,34 +342,31 @@ nav.active {
   }
 }
 
-
-.back{
-  display: block;
+.back {
   background-color: rgba(185, 179, 179, 0.342);
-  color: black;
+  color: rgba(0, 0, 0, 0.822);
   display: flex;
   justify-content: center;
   align-items: center;
-  .fa-creative-commons{
-  font-size: 30px;;
-  }
-  h5{
-    margin-right: 30px;
- 
-  }
-  
-    .st{
-      display: none;
-    }
-  
 
+  .fa-creative-commons {
+    font-size: 30px;
+  }
+
+  h5 {
+    margin: 0 15px;
+  }
+
+  .st {
+    display: none;
+  }
 }
 
 //..............................................................................
 //                  MEDIA QUERY
 //..............................................................................
 
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 769px) {
   .mobile {
     display: none;
   }
@@ -359,8 +382,6 @@ nav.active {
   .about-paragraph {
     width: 50%;
   }
-
-
 
   .gray-background-icon {
     background-color: gray;
@@ -406,91 +427,74 @@ nav.active {
         padding: 5px;
         color: #1a1b1b;
       }
-
-  
     }
   }
+
   .card-items {
     margin: 0 10em;
   }
 
-footer, .top-footer{
-  padding: 20px;
-  background-color: #272A31;
-  color: white;
-  margin-top: 10px;
-}
+  footer,
+  .top-footer {
+    padding: 20px;
+    background-color: #272a31;
+    color: white;
+    margin-top: 10px;
+  }
 
-.back{
-  display: block;
-  background-color: #272A31; 
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .fa-creative-commons{
-  font-size: 30px;
-  }
-  h5{
-    display:block;
-    font-size: 1em;
-  }
-  .st{
+  .back {
+    background-color: #272a31;
+    color: white;
     display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-    padding: 0;
-  }
+    justify-content: center;
+    align-items: center;
 
-}
+    .fa-creative-commons {
+      font-size: 30px;
+    }
 
+    h5 {
+      display: block;
+      font-size: 1em;
+    }
 
-
-
-
-
-.bottom-footer{
-  display: block;
-  background-color: #989ca359;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .fa-creative-commons{
-  font-size: 30px;;
-  }
-  h5{
-    font-size: 1em;
-  }
-  .st{
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-    padding: 0;
-  }
-
-}
-
-.footer-content {
-  .logos {
-    display: flex;
-    justify-content: space-around;
-
-    li {
-      list-style: none;
-      font-size: 4em;
-      color: #f1f1f1;
+    .st {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px;
+      padding: 0;
     }
   }
-}
 
+  .bottom-footer {
+    background-color: #989ca359;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fa-creative-commons {
+      font-size: 30px;
+    }
+
+    h5 {
+      font-size: 1em;
+    }
+
+    .st {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px;
+      padding: 0;
+    }
+  }
 
   .menu-items > *:hover {
     transform: scale(2.1);
     transform-origin: center;
 
     a {
-      color: red;
+      color: #ec5242;
       border: 1px solid red;
     }
   }
@@ -499,12 +503,25 @@ footer, .top-footer{
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    background-color: #272A31;
+    background-color: #272a31;
     color: white;
     padding: 20px 0;
 
     li {
       margin-right: 20px;
+    }
+  }
+
+  .footer-content {
+    .logos {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        list-style: none;
+        font-size: 4em;
+        color: #f1f1f1;
+      }
     }
   }
 
@@ -553,6 +570,7 @@ footer, .top-footer{
     margin: 0 0.1px;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .card-item-child:hover {
@@ -597,7 +615,22 @@ footer, .top-footer{
   }
 
   .portfolio {
-    margin-right: 2em;
+    margin-right: 3%;
+  }
+
+  .portfolio::before {
+    content: "";
+    margin-right: 3%;
+    display: block;
+    position: absolute;
+    background-size: cover;
+    width: 5%;
+    height: 7%;
+    opacity: 0.9;
+    background-image: url(../images/dotted.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: translate(-12%, -20%);
   }
 
   .about {
@@ -622,6 +655,7 @@ footer, .top-footer{
 
   .about-section {
     p {
+      color: gray;
       width: 50%;
     }
   }
@@ -644,7 +678,7 @@ footer, .top-footer{
       margin-top: 1em;
       font-size: 3em;
       text-align: center;
-      color: rgba(226, 48, 17, 0.8);
+      color: #ec5242;
     }
 
     h2 {
@@ -652,7 +686,7 @@ footer, .top-footer{
       margin: 10px 0;
       font-size: 5em;
       text-align: center;
-      color: rgba(226, 48, 17, 0.8);
+      color: #ec5242;
     }
 
     .paragraph-one {
@@ -672,7 +706,7 @@ footer, .top-footer{
 
     .A-logo {
       font-size: 2em;
-      margin-right: 10px;    
+      margin-left: 5px;
+    }
   }
-}
 }
